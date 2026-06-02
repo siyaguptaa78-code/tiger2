@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-Cricket" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffc558" />
+      <stop offset="100%" stop-color="#ff7300" />
+    </linearGradient>
+    <filter id="glow-effect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background Card -->
+  <rect x="5" y="5" width="390" height="230" rx="15" fill="#111823" stroke="rgba(255,255,255,0.06)" stroke-width="2" />
+  <!-- Accent Glow Top -->
+  <path d="M 5,30 Q 200,80 395,30" fill="none" stroke="url(#bg-grad-Cricket)" stroke-width="3" opacity="0.3" filter="url(#glow-effect)" />
+  <!-- Icon or Graphic -->
+  <g transform="translate(40, 95)" opacity="0.85">
+    <circle cx="45" cy="45" r="35" fill="none" stroke="#ff7300" stroke-width="4" />
+   <path d="M22,68 L68,22" stroke="#ff7300" stroke-width="8" stroke-linecap="round" />
+   <circle cx="35" cy="35" r="4" fill="#fff" />
+   <circle cx="55" cy="55" r="4" fill="#fff" />
+  </g>
+  <!-- Game Title -->
+  <text x="180" y="115" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="30" fill="#ffffff" letter-spacing="1">CRICKET</text>
+  <text x="180" y="145" font-family="'Outfit', 'Inter', sans-serif" font-weight="700" font-size="14" fill="url(#bg-grad-Cricket)" letter-spacing="3">SPORTS BOOK</text>
+  
+  <!-- "Play Now" Hover Accent -->
+  <g transform="translate(180, 168)" opacity="0.9">
+    <rect x="0" y="0" width="110" height="32" rx="16" fill="url(#bg-grad-Cricket)" />
+    <text x="55" y="21" font-family="'Outfit', sans-serif" font-weight="900" font-size="12" fill="#000000" text-anchor="middle" letter-spacing="1">PLAY NOW</text>
+  </g>
+</svg>

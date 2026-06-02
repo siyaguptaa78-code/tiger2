@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50%">
+  <defs>
+    <linearGradient id="bf-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb129" />
+      <stop offset="100%" stop-color="#ef8c16" />
+    </linearGradient>
+  </defs>
+  <!-- Up/Down arrows -->
+  <path d="M15,10 L30,22 L22,22 L22,40 L8,40 L8,22 L0,22 Z" fill="#ffffff" />
+  <path d="M45,40 L30,28 L38,28 L38,10 L52,10 L52,28 L60,28 Z" fill="url(#bf-grad)" />
+  <text x="75" y="35" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#ffffff" letter-spacing="1">betfair</text>
+</svg>

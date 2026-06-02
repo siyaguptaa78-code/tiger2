@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tiger365 Landing Page Clone
 
-## Getting Started
+A premium, pixel-perfect, and fully responsive clone of the live guest landing page for `https://www.tiger365.in/home`. Built from the ground up using **Next.js (App Router) + TypeScript + Tailwind CSS** (Tailwind CSS v4).
 
-First, run the development server:
+All page layouts, component structures, dynamic modal links, operator text data, and legal guidelines have been successfully mapped and copied directly from the reference website's compiled bundles.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ⚡ Tech Stack & Features
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styles**: Tailwind CSS v4 (with PostCSS configuration)
+- **Fonts**: Outfit (from Google Fonts)
+- **Responsive Layout**: Designed specifically for mobile screens, tablets, and desktops matching the mobile drawer navigation of the reference site.
+- **Glassmorphic UI**: Premium translucent panels, glowing border highlights, and automated gold-orange gradients.
+- **Modular Architecture**: Component-based files with clear single responsibilities.
+
+---
+
+## 📂 Project Structure
+
+```
+tiger365/
+  ├── app/
+  │   ├── globals.css        # Global CSS, Tailwind v4 imports, scrollbars and gradients
+  │   ├── layout.tsx         # HTML shell, page metadata and Outfit typography
+  │   └── page.tsx           # Page assembler, modal states and layout bindings
+  ├── components/
+  │   ├── Header.tsx         # Desktop navbar, mobile burger menu & drawer overlay
+  │   ├── Banner.tsx         # Auto-play responsive fading slides hero slider
+  │   ├── Legal.tsx          # Live dealer divider odds banner
+  │   ├── OnlineGames.tsx    # Responsive grid of sports and live dealer game tiles
+  │   ├── Footer.tsx         # Notices, legal page triggers & compliance badges
+  │   ├── Modal.tsx          # Reusable glassmorphic modal box wrapper
+  │   ├── LoginModal.tsx     # Username/password form with eye toggle visibility
+  │   ├── RegisterModal.tsx  # Mobile signup form with field verification
+  │   ├── ForgetPasswordModal.tsx # Forgot password contact notice
+  │   └── InfoModals.tsx     # Terms, About Us, Privacy, Rules & Responsible Gaming modals
+  ├── public/
+  │   └── assets/            # Glowing custom vector graphics and logo assets
+  ├── types/
+  │   └── index.ts           # Shared custom TypeScript definitions
+  └── package.json           # Scripts and dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Setup & Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Prerequisite
+Ensure that you have [Node.js (v18.0.0 or higher)](https://nodejs.org) installed on your system.
 
-## Learn More
+### 2. Install Dependencies
+Run the following command inside the project root folder to install packages:
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Run Development Server
+Start the local server for visual validation and testing:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) inside your web browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Build Production Bundle
+Compile the Next.js bundle for optimized, clean static production files:
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Design Systems & Visual Accents
+* **Background Primary**: Dark deep slate `#080c12`
+* **Card Panels**: Translucent glassmorphism `#111823` with glowing border outlines
+* **Gold Gradient Accent**: Gold `#ffc558` to deep orange-gold `#ff7300`
+* **Text Compliance Colors**: Sleek light gray `#8b9aae` for descriptions, bold gold for links
