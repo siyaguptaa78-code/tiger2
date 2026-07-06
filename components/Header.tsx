@@ -182,7 +182,7 @@ export default function Header({
           {/* Sidebar Footer */}
           <div className="border-t border-white/5 pt-4 text-center">
             <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
-              WWW.TIGER365.IN
+              WWW.TIGER365OFFICIAL.CO.IN
             </p>
           </div>
         </div>

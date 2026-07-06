@@ -15,7 +15,7 @@ import { ModalType } from '@/types';
 
 export default function Home() {
   const [activeModal, setActiveModal] = useState<ModalType>(null);
-  const domainName = 'tiger365.in';
+  const domainName = 'tiger365official.co.in';
 
   const handleOpenModal = (type: ModalType) => {
     setActiveModal(type);

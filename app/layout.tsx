@@ -15,16 +15,36 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tiger365official.co.in'),
   title: "Tiger365 - Enjoy Fastest Odds with Live Dealers",
   description: "Register on Tiger365 and enjoy online sports betting on Cricket, Soccer, Tennis and Live Casino Table games with high-speed settlements and 24/7 dedicated support.",
-  keywords: "tiger365, tiger365.in, tiger exchange, online betting, live casino, sports betting exchange, cricket betting ID",
+  keywords: "tiger365, tiger365official, tiger exchange, online betting, live casino, sports betting exchange, cricket betting ID",
+  applicationName: 'Tiger365',
+  authors: [{ name: 'Tiger365' }],
+  creator: 'Tiger365',
+  publisher: 'Tiger365',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: "Tiger365 - Enjoy Fastest Odds with Live Dealers",
     description: "Register on Tiger365 and enjoy online sports betting on Cricket, Soccer, Tennis and Live Casino Table games with high-speed settlements.",
-    url: "https://www.tiger365.in",
+    url: "https://tiger365official.co.in",
     siteName: "Tiger365",
     type: "website",
-  }
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Tiger365 - Enjoy Fastest Odds with Live Dealers",
+    description: "Register on Tiger365 and enjoy online sports betting on Cricket, Soccer, Tennis and Live Casino Table games with high-speed settlements.",
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
