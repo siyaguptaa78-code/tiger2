@@ -16,6 +16,9 @@ export const viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://tiger365official.co.in'),
+  verification: {
+    google: "1HccjCAMmju3o1sxJQZn7PdxS1JOPEyTDowlYtlxxNg",
+  },
   title: "Tiger365 - Enjoy Fastest Odds with Live Dealers",
   description: "Register on Tiger365 and enjoy online sports betting on Cricket, Soccer, Tennis and Live Casino Table games with high-speed settlements and 24/7 dedicated support.",
   keywords: "tiger365, tiger365official, tiger exchange, online betting, live casino, sports betting exchange, cricket betting ID",
