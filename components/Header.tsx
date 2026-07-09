@@ -31,6 +31,7 @@ export default function Header({
               height={50}
               priority
               className="object-contain"
+              style={{ width: 'auto', height: 'auto' }}
             />
           </Link>
 
@@ -79,6 +80,7 @@ export default function Header({
               height={36}
               priority
               className="object-contain"
+              style={{ width: 'auto', height: 'auto' }}
             />
           </Link>
 
@@ -129,6 +131,7 @@ export default function Header({
               height={34}
               priority
               className="object-contain"
+              style={{ width: 'auto', height: 'auto' }}
             />
             <button
               onClick={() => setIsMobileMenuOpen(false)}
