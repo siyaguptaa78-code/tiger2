@@ -25,7 +25,7 @@ export default function OnlineGames({ onSelectGame }: OnlineGamesProps) {
   ];
 
   return (
-    <section className="w-full py-8 md:py-12 bg-[#080c12] relative z-10 px-4">
+    <section className="w-full py-8 md:py-12 bg-[#080c12] relative z-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto w-full space-y-6 md:space-y-10">
         
         {/* Section Heading */}

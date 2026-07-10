@@ -21,7 +21,7 @@ export default function Header({
     <>
       <header className="w-full relative z-30 bg-[#080c12] border-b border-white/5">
         {/* Desktop Header */}
-        <div className="hidden md:flex items-center justify-between px-6 py-4 max-w-7xl mx-auto w-full">
+        <div className="hidden md:flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4 max-w-7xl mx-auto w-full">
           {/* Logo */}
           <Link href="/" className="flex items-center w-[220px]">
             <Image

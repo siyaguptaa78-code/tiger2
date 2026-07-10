@@ -11,7 +11,7 @@ interface FooterProps {
 
 export default function Footer({ onOpenModal, domainName }: FooterProps) {
   return (
-    <footer className="w-full bg-[#060b13] border-t border-white/5 py-10 px-4 mt-auto relative z-10">
+    <footer className="w-full bg-[#060b13] border-t border-white/5 py-10 px-4 sm:px-6 lg:px-8 mt-auto relative z-10">
       <div className="max-w-7xl mx-auto w-full space-y-8">
         
         {/* Warning notification banner */}

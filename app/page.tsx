@@ -11,6 +11,7 @@ import LoginModal from '@/components/LoginModal';
 import RegisterModal from '@/components/RegisterModal';
 import ForgetPasswordModal from '@/components/ForgetPasswordModal';
 import InfoModals from '@/components/InfoModals';
+import BlogSection from '@/components/BlogSection';
 import { ModalType } from '@/types';
 
 export default function Home() {
@@ -59,7 +60,7 @@ export default function Home() {
       />
 
       {/* Main Body wrap */}
-      <main className="flex-1 w-full max-w-7xl mx-auto z-10">
+      <main className="flex-1 w-full z-10">
         {/* 2. Carousel Banner component */}
         <Banner onPlayNow={() => handleOpenModal('login')} />
 
@@ -68,6 +69,9 @@ export default function Home() {
 
         {/* 4. Game Tiles Grid component */}
         <OnlineGames onSelectGame={() => handleOpenModal('login')} />
+
+        {/* 5. Blog Section component */}
+        <BlogSection />
       </main>
 
       {/* 5. Footer component */}

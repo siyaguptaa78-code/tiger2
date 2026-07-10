@@ -42,7 +42,7 @@ export default function Banner({ onPlayNow }: BannerProps) {
   }, [slides.length]);
 
   return (
-    <section className="w-full py-6 md:py-10 bg-[#080c12] relative z-10 px-4">
+    <section className="w-full py-6 md:py-10 bg-[#080c12] relative z-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto w-full relative h-[260px] md:h-[400px] rounded-3xl overflow-hidden shadow-2xl border border-white/5 bg-[#111823]">
         {/* Banner mask background texture */}
         <div className="absolute inset-0 bg-[url('/assets/banner-mask-heading-sec-DX7r4ccK.webp')] bg-cover bg-center opacity-10 mix-blend-overlay pointer-events-none" />
