@@ -12,6 +12,7 @@ import RegisterModal from "@/components/RegisterModal";
 import ForgetPasswordModal from "@/components/ForgetPasswordModal";
 import InfoModals from "@/components/InfoModals";
 import BlogSection from "@/components/BlogSection";
+import FAQSection from "@/components/FAQSection";
 import { ModalType } from "@/types";
 
 export default function Home() {
@@ -75,9 +76,12 @@ export default function Home() {
 
         {/* 5. Blog Section component */}
         <BlogSection />
+
+        {/* 6. FAQ Section */}
+        <FAQSection />
       </main>
 
-      {/* 5. Footer component */}
+      {/* 7. Footer component */}
       <Footer onOpenModal={handleOpenModal} domainName={domainName} />
 
       {/* --- Action Dialog Modals --- */}
