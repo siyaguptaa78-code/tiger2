@@ -48,7 +48,7 @@ export default function ForgetPasswordModal({
           <p className="text-sm font-semibold leading-relaxed text-slate-200">{success}</p>
           <div className="pt-2">
             <a
-              href="https://wa.me/918796686330"
+              href="https://wa.me/918360750829"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25D366] hover:bg-[#20ba56] text-black font-extrabold text-sm rounded-full transition shadow-lg"
