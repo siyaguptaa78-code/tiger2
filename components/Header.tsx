@@ -21,7 +21,7 @@ export default function Header({
     <>
       <header className="w-full relative z-30 bg-[#080c12] border-b border-white/5">
         {/* Desktop Header */}
-        <div className="hidden md:flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4 max-w-7xl mx-auto w-full">
+        <div className="hidden md:flex items-center justify-between px-6 lg:px-12 py-5 max-w-[1440px] mx-auto w-full">
           {/* Logo */}
           <Link href="/" className="flex items-center w-[220px]">
             <Image
@@ -40,14 +40,14 @@ export default function Header({
             {businessType === 2 && (
               <button
                 onClick={onOpenRegister}
-                className="px-5 py-2.5 rounded-full border border-[rgba(239,140,22,0.3)] hover:border-[#ef8c16] text-[#ef8c16] font-bold text-sm tracking-wider uppercase transition-all duration-200 cursor-pointer"
+                className="h-[44px] px-6 rounded-full border border-[rgba(239,140,22,0.3)] hover:border-[#ef8c16] text-[#ef8c16] font-bold text-sm tracking-wider uppercase transition-all duration-200 cursor-pointer flex items-center justify-center"
               >
                 Register
               </button>
             )}
             <button
               onClick={onOpenLogin}
-              className="px-6 py-2.5 rounded-full btn-gold-gradient font-bold text-sm tracking-wider uppercase cursor-pointer"
+              className="btn-gold-gradient text-sm tracking-wider cursor-pointer"
             >
               Login
             </button>
@@ -55,11 +55,11 @@ export default function Header({
         </div>
 
         {/* Mobile Header */}
-        <div className="flex md:hidden items-center justify-between px-4 py-3.5 w-full bg-[#080c12]">
+        <div className="flex md:hidden items-center justify-between px-4 py-4 w-full bg-[#080c12] mx-auto">
           {/* Hamburger Menu Bar */}
           <button
             onClick={() => setIsMobileMenuOpen(true)}
-            className="p-1 cursor-pointer"
+            className="p-2 -ml-2 cursor-pointer flex-shrink-0"
             aria-label="Open mobile navigation"
           >
             <Image
@@ -72,31 +72,30 @@ export default function Header({
           </button>
 
           {/* Logo Center */}
-          <Link href="/" className="flex items-center w-[160px] justify-center">
+          <Link href="/" className="flex items-center justify-center mx-auto flex-shrink-0">
             <Image
               src="/assets/logo.svg"
               alt="Tiger365 Logo"
-              width={160}
-              height={36}
+              width={140}
+              height={32}
               priority
               className="object-contain"
-              style={{ width: 'auto', height: 'auto' }}
             />
           </Link>
 
           {/* Action buttons */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-shrink-0">
             {businessType === 2 && (
               <button
                 onClick={onOpenRegister}
-                className="px-3 py-1.5 rounded-full border border-[rgba(239,140,22,0.3)] text-[#ef8c16] font-bold text-xs uppercase cursor-pointer"
+                className="h-[36px] px-3 rounded-full border border-[rgba(239,140,22,0.3)] text-[#ef8c16] font-bold text-[11px] uppercase tracking-wider cursor-pointer flex items-center justify-center"
               >
                 Reg
               </button>
             )}
             <button
               onClick={onOpenLogin}
-              className="px-3.5 py-1.5 rounded-full btn-gold-gradient font-bold text-xs uppercase cursor-pointer"
+              className="h-[36px] px-4 rounded-full btn-gold-gradient text-[11px] uppercase tracking-wider cursor-pointer !min-h-[36px]"
             >
               Log
             </button>

@@ -128,20 +128,26 @@ html, body {
 .btn-gold-gradient {
   background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-dark) 100%);
   color: #000000;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 15px rgba(255, 115, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px; /* Mobile touch target size */
+  padding: 0 24px;
 }
 
 .btn-gold-gradient:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(255, 115, 0, 0.4);
-  filter: brightness(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 115, 0, 0.4);
+  filter: brightness(1.1);
 }
 
 .btn-gold-gradient:active {
   transform: translateY(1px);
+  box-shadow: 0 2px 10px rgba(255, 115, 0, 0.3);
 }
 
 /* Custom glowing effects */

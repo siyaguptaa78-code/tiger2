@@ -53,41 +53,45 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-[#080c12] relative z-10">
+    <section className="w-full py-16 md:py-24 px-4 sm:px-6 lg:px-8 xl:px-0 bg-[#080c12] relative z-10 max-w-[1440px] mx-auto">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-            Frequently Asked <span className="text-[#ef8c16]">Questions</span>
+        <div className="text-center mb-12 md:mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#111823] border border-white/5 mb-4">
+            <span className="w-2 h-2 rounded-full bg-[#ef8c16]"></span>
+            <span className="text-xs font-bold text-[#ef8c16] uppercase tracking-wider">Help Center</span>
+          </div>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 md:mb-6 tracking-tight">
+            Frequently Asked <span className="text-gold-gradient">Questions</span>
           </h2>
-          <p className="text-slate-400 text-sm md:text-base">
-            Find answers to common questions about Tiger365 and how to get started.
+          <p className="text-slate-400 text-sm md:text-lg max-w-2xl mx-auto">
+            Find answers to common questions about Tiger365 and how to get started on our premium platform.
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 md:space-y-6">
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="bg-[#111823] border border-white/5 rounded-xl overflow-hidden transition-all duration-300 hover:border-[#ef8c16]/30"
+              className={`bg-[#111823] border rounded-2xl overflow-hidden transition-all duration-300 ${openIndex === index ? 'border-[#ef8c16]/50 shadow-lg shadow-[#ef8c16]/5' : 'border-white/5 hover:border-[#ef8c16]/30'}`}
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none"
+                className="w-full px-6 md:px-8 py-5 md:py-6 flex justify-between items-center text-left focus:outline-none cursor-pointer"
               >
-                <span className="font-bold text-slate-200 text-sm md:text-base pr-4">
+                <span className="font-bold text-slate-200 text-base md:text-lg pr-6 group-hover:text-white transition-colors">
                   {faq.question}
                 </span>
-                <span className={`transform transition-transform duration-300 flex-shrink-0 text-[#ef8c16] ${openIndex === index ? 'rotate-180' : ''}`}>
+                <span className={`transform transition-transform duration-300 flex-shrink-0 text-[#ef8c16] bg-white/5 p-2 rounded-full ${openIndex === index ? 'rotate-180 bg-[#ef8c16]/10' : ''}`}>
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                   </svg>
                 </span>
               </button>
               
               <div 
-                className={`transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}
+                className={`transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
               >
-                <div className="px-6 pb-5 text-slate-400 text-sm md:text-base border-t border-white/5 pt-4">
+                <div className="px-6 md:px-8 pb-6 md:pb-8 text-slate-400 text-sm md:text-base border-t border-white/5 pt-4 md:pt-5 leading-relaxed">
                   {faq.answer}
                 </div>
               </div>
