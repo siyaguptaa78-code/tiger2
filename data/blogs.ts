@@ -230,28 +230,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-6 text-slate-300 leading-relaxed">As South Africa's answer to England's T20 Blast, the SA20 has the advantage of all franchises being owned by IPL teams. This has helped to create a tournament that serves both as a scouting ground for the IPL and an overflow for South Africa's white-ball talent, as the likes of Dwaine Pretorius, Brevis and Jansen - all SA20 regulars - have enjoyed huge success overseas. The details of the squad rebuild ahead of the fifth season will be discussed in the next few months leading up to the September 2026 auction.</p>
     `
   },
-  {
-    id: 'ipl-betting-tips-2024',
-    title: 'Top IPL Betting Tips for 2026 Season',
-    excerpt: 'Get the best strategies for IPL betting this season. Learn how to analyze team performance, pitch conditions, and player form to maximize your winnings.',
-    category: 'Cricket Betting',
-    date: 'June 1, 2026',
-    readTime: '5 min read',
-    emoji: '📈',
-    color: 'from-amber-900/30 to-[#111823]',
-    content: `
-      <p class="mb-6 text-slate-300 leading-relaxed">The Indian Premier League (IPL) 2026 is set to be one of the most exciting tournaments in cricket history. With teams packed with international stars and emerging domestic talents, betting on IPL matches requires deep analysis and a strategic approach. Here is our comprehensive guide to help you make informed decisions and get the most out of your Tiger365 ID.</p>
-      
-      <h3 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#ef8c16] to-[#f4b860] mt-10 mb-6">1. Understand Pitch and Weather Conditions</h3>
-      <p class="mb-6 text-slate-300 leading-relaxed">Pitch conditions play a vital role in the outcome of T20 matches in India. Venues like Wankhede (Mumbai) and Chinnaswamy (Bengaluru) are historically high-scoring due to short boundaries and flat wickets, making them ideal for backing the team chasing. On the other hand, slow, spin-friendly pitches like Chepauk (Chennai) favor teams with quality spin bowlers and require a different strategy.</p>
-      
-      <h3 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#ef8c16] to-[#f4b860] mt-10 mb-6">2. Analyze Player Form and Matchups</h3>
-      <p class="mb-6 text-slate-300 leading-relaxed">Pre-match matchups are highly critical. Check head-to-head stats of key batsmen against specific bowlers. For instance, if an opening batsman struggles against left-arm fast bowling, look at the opponent's bowling attack. Using your Tiger365 exchange ID, you can capitalize on these specific matchups live as they unfold.</p>
-      
-      <h3 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#ef8c16] to-[#f4b860] mt-10 mb-6">3. Live Betting is Key</h3>
-      <p class="mb-6 text-slate-300 leading-relaxed">T20 cricket swings rapidly. Backing a team before the match begins might offer lower odds compared to wait-and-watch tactics. Live betting on the Tiger365 platform allows you to assess the game's tempo, the dew factor in night matches, and the exact match situation before placing your bets.</p>
-    `
-  },
+
   {
     id: 'asian-games-2026-indias-sporting-challenge',
     title: 'Asian Games 2026: India’s Sporting Challenge Takes Shape as Aichi-Nagoya Games Approach',

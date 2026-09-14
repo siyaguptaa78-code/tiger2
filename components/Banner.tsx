@@ -13,7 +13,7 @@ export default function Banner({ onPlayNow }: BannerProps) {
     {
       title: 'ENJOY FASTEST ODDS',
       subtitle: 'WITH LIVE DEALERS & CASINOS',
-      description: 'Get real-time betting updates, competitive odds, and instant transactions on your favorite games.',
+      description: 'Get real-time gaming updates, competitive odds, and instant transactions on your favorite games.',
       buttonText: 'Play Now',
       color: 'from-[#ff7300] to-[#ef8c16]',
     },
@@ -64,7 +64,7 @@ export default function Banner({ onPlayNow }: BannerProps) {
             {/* Slide info content */}
             <div className="max-w-2xl space-y-4 md:space-y-6 z-10 relative">
               <span className={`inline-block px-4 py-1.5 text-[10px] md:text-xs font-black tracking-widest text-[#000000] bg-gradient-to-r ${slide.color} rounded-full uppercase shadow-lg`}>
-                VIP Betting
+                VIP Access
               </span>
               <div className="space-y-2 md:space-y-3">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] glow-text-gold tracking-tight">

@@ -26,7 +26,7 @@ export default function OnlineGames({ onSelectGame }: OnlineGamesProps) {
 
   // Categories mapping
   const getCategory = (name: string) => {
-    if (['Cricket', 'Football', 'Tennis'].includes(name)) return 'Sports Betting';
+    if (['Cricket', 'Football', 'Tennis'].includes(name)) return 'Sports';
     if (name.includes('Casino')) return 'Live Casino';
     return 'Table Game';
   };
@@ -41,7 +41,7 @@ export default function OnlineGames({ onSelectGame }: OnlineGamesProps) {
             Online Game Zone
           </h2>
           <p className="text-sm md:text-base text-slate-400 font-bold tracking-widest uppercase">
-            Live Sports Betting &amp; Casino Table Games
+            Live Sports &amp; Casino Table Games
           </p>
         </div>
 

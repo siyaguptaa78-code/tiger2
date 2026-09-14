@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "What sports are available on Tiger365?",
-    answer: "Available sports can change. Check the current sports or betting section on the website for the latest list and availability."
+    answer: "Available sports can change. Check the current sports or gaming section on the website for the latest list and availability."
   },
   {
     question: "Does Tiger365 provide live sports information?",
